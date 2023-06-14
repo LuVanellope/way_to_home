@@ -1,6 +1,7 @@
 FactoryBot.define do
   factory :user, class: User do
     email { Faker::Internet.email }
+    roles { nil }
   end
 
   trait(:admin) do
